@@ -182,7 +182,12 @@ public class Inventario4x4 : MonoBehaviour
         //        break;
 
         //}
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Bolsa[ID].GetComponent<Image>().sprite = null;
+            Bolsa[ID].GetComponent<Image>().enabled = false;
+            
+        }
 
     }
 
@@ -198,9 +203,17 @@ public class Inventario4x4 : MonoBehaviour
     void Update()
     {
         Navegar();
-          
-          
-        
+
+
+        //for (int i = 0; i < Bolsa.Count; i++)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Delete))
+        //    {
+        //        Bolsa[i].GetComponent<Image>().enabled = false;
+                
+        //        break;
+        //    }
+        //}
 
         if (Activar_Inv)
         {
